@@ -37,13 +37,20 @@ const MobileNavigation = ({
 
   return (
     <header className="mobile-header">
-      <Image
+      {/* <Image
         src="/assets/icons/logo-full-brand.svg"
         alt="logo"
         width={120}
         height={52}
         className="h-auto"
-      />
+      /> */}
+      {/* <Image
+        src="/assets/icons/logo-brand.svg"
+        alt="logo"
+        width={52}
+        height={52}
+        className="h-auto"
+      /> */}
 
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
@@ -79,7 +86,7 @@ const MobileNavigation = ({
                   <li
                     className={cn(
                       "mobile-nav-item",
-                      pathname === url && "shad-active",
+                      pathname === url && "shad-active"
                     )}
                   >
                     <Image
@@ -89,7 +96,7 @@ const MobileNavigation = ({
                       height={24}
                       className={cn(
                         "nav-icon",
-                        pathname === url && "nav-icon-active",
+                        pathname === url && "nav-icon-active"
                       )}
                     />
                     <p>{name}</p>
